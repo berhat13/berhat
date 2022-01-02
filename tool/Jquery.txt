@@ -1,0 +1,96 @@
+input**********
+<body>
+<input type="text" class="m-5 color-white"id="input">
+</body>
+</html>
+<script>
+$("#input").on("focus",function(){
+  $("#input").css("background","red");
+})
+$("input").on("blur",function(){
+  $("#input").css("border","none");
+})
+</script>
+====================================================================================================================================================
+important
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="icon" href="img/10.jpg">
+    <link rel="stylesheet" href="tool/bootstrap.min.css">
+    <link rel="stylesheet" href="tool/style.css">
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+
+<div class="card col-5 m-auto p-2 shadow border-1 bg-light">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at voluptatem, natus perferendis aperiam dolorum, tenetur error dolore ipsum provident eum quos enim veniam beatae quam ab quas pariatur exercitationem.
+        <p id="more" class="d-none"> amet consectetur adipisicing elit. Sapiente similique aspernatur rem voluptate laboriosam temporibus aliquid eum autem et sunt, animi nemo libero dolore omnis, voluptates commodi eligendi facilis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore atque accusantium similique, neque est doloremque alias aliquam quasi molestias tempora sint quaerat quis laboriosam excepturi enim dolore dicta? Esse, cum!</p>
+    </div>
+    <div>
+        <button class="btn btn-primary">Click</button>
+    </div>
+</div>
+<div>
+        <img src="img/l1.png"id="b1" style="height:80px;width:80px;border-radius:30px;"alt="">
+    </div>
+</body>
+</html>
+<script>
+
+
+$("#b1").on("click",function(){
+$("body").toggleClass("bg-dark");
+$("#b1").toggleClass("bg-warning");
+$("body").toggleClass("c-white");
+})
+
+
+$(".btn-primary").on("click",function(){
+    $("#more").toggleClass("d-block");
+})
+</script>  
+
+-----------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="icon" href="img/10.jpg">
+    <link rel="stylesheet" href="tool/bootstrap.min.css">
+    <link rel="stylesheet" href="tool/style.css">
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<div class="card col-5 m-auto p-2 shadow border-1 bg-light"> <p>
+     ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at voluptatem,
+      natus perferendis aperiam dolorum, tenetur error dolore ipsum provident eum quos enim 
+      veniam beatae quam ab quas pariatur exercitationem.
+    amet consectetur adipisicing elit. Sapiente similique aspernatur rem voluptate laboriosam
+    temporibus aliquid eum autem et sunt, animi nemo libero dolore omnis, voluptates commodi
+     eligendi facilis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Tempore atque accusantium similique, neque est doloremque alias aliquam quasi molestias 
+      tempora sint quaerat quis laboriosam excepturi enim dolore dicta? Esse, cum!
+    </p>
+    <div>
+        <button class="btn btn-primary">Click</button>
+    </div>
+</div>
+</body>
+</html>
+<script>
+$("p").on({
+    "click":function(){
+        $("p").css("background","#666")
+    },
+    "dblclick":function(){
+        $("p").css("color","white")
+    },
+    "mouseover":function(){
+        $("p").css("font-size","25px")
+    }
+})
+</script>  
+-------------------------------------------------------------------------------------------------
