@@ -45,7 +45,7 @@
 </head>
 <body> 
     <?php 
-    $db=mysqli_connect('localhost','root','','prank');
+    $db=mysqli_connect('sql','root','','prank');
     ?>
     <a href="/About.html" class="a">Go Back</a>
     <div class="tech">
