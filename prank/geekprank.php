@@ -2,7 +2,7 @@
 include 'geek.sql';
 ?>
     <?php 
-    $db=mysqli_connect('sql','root','','prank');
+    $db=mysqli_connect('localhost','root','','prank');
     ?>
         <?php  
     if(isset($_POST['submit'])){
