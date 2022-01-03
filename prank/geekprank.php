@@ -1,6 +1,8 @@
-<?php include 'geekprank.html'; ?>
+<?php include 'geekprank.html';
+include 'geek.sql';
+?>
     <?php 
-    $db=mysqli_connect('github','root','','prank');
+    $db=mysqli_connect('sql','root','','prank');
     ?>
         <?php  
     if(isset($_POST['submit'])){
