@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>About</title>
+  <link rel="icon" href="icon/about.svg">
+  <link rel="stylesheet" href="tool/bootstrap.min.css">
+  <link rel="stylesheet" href="tool/style.css">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="tool/bootstrap.min.js"></script>
+</head>
+
+<body class="body" style="
+ background-color: white;
+background-image: url('img/');
+background-repeat: no-repeat;
+background-size: 1300px;
+margin: 0px;
+">
+  <!-- Header Start-->
+  <!-- Navigation bar  start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="nav-links">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Content.html">Content</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Web.html">WebDesign</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="App.html">Application</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation bar End -->
+  <!-- Header Ebd -->
+  <!-- Main Start-->
+  <div class="buttongroup">
+    <p class="pgroup">Click button to change background-color :- </p>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+  </div><br>
+  <div class="lorem">
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Tempore excepturi nesciunt illum libero distinctio ipsa
+      labore veritatis! Accusantium quam animi, praesentium dolores
+      tempore neque optio ipsum, eveniet assumenda ea dignissimos.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Explicabo labore quasi dolorem ullam eius quos nisi
+      perferendis debitis voluptate velit optio unde rem repellendus,
+      impedit, cupiditate, ut atque facere sunt!
+      tempore neque optio ipsum, eveniet assumenda ea dignissimos.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Explicabo labore quasi dolorem ullam eius quos nisi
+      perferendis debitis voluptate velit optio unde rem repellendus,
+      impedit, cupiditate, ut atque facere sunt!</p><br>
+    <button type="button" class="btn btn-outline-primary w-100">Change Size</button><br><br>
+    <button type="button" class="btn danger btn-outline-danger w-100">Delete</button>
+  </div><br>
+
+  <!-- Geek Prenk Start -->
+    <a href="prank/geekprank.html" class="a">Go GeekPrank</a>
+    <style>
+      .a{
+    background-color: red;
+    display: block;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border-radius: 3px;
+    transition: 0.6s;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.6s;
+  }.a:hover{
+    text-decoration: none;
+    color: black;
+  }
+    </style>
+    <!-- Geek Prenk End -->
+  <!-- Main End-->
+  <!-- Fotter Start -->
+  <!--Null -->
+  <!-- Fotter End -->
+</body>
+
+</html>
+
+<!-- some style -->
+<style>
+  .buttongroup {
+    background-color: lightgray;
+    margin: auto;
+    margin-top: 10px;
+    width: 500px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .pgroup {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .lorem {
+    background-color: white;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 600px;
+    margin: auto;
+  }
+</style>
+<!-- some style -->
+<!-- Jquery is Start-->
+<script>
+  $(".btn-outline-success").on("click", function () {
+    $(".body").toggleClass("bg-success");
+  })
+  $(".btn-outline-danger").on("click", function () {
+    $(".body").toggleClass("bg-danger");
+  })
+  $(".btn-outline-warning").on("click", function () {
+    $(".body").toggleClass("bg-warning");
+  })
+  $(".btn-outline-info").on("click", function () {
+    $(".body").toggleClass("bg-info");
+  })
+  $(".btn-outline-light").on("click", function () {
+    $(".body").toggleClass("bg-light");
+  })
+  $(".btn-outline-dark").on("click", function () {
+    $(".body").toggleClass("bg-dark");
+  })
+  $(".btn-outline-primary").on("click", function () {
+    $(".p").slideToggle();
+  })
+  $(".btn-outline-primary").on("mouseover", function () {
+    $(".danger").show();
+  })
+  $(".danger").on("mouseover", function () {
+    $(".danger").hide();
+  })
+  /*
+  $(window).on("resize", function () {
+    alert('You Do Resize')
+  })*/
+</script>
+<!-- Jquery is End-->
