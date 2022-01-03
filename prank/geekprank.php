@@ -1,6 +1,6 @@
 <?php include 'geekprank.html'; ?>
     <?php 
-    $db=mysqli_connect('localhost','root','','prank');
+    $db=mysqli_connect('sql','root','','prank');
     ?>
         <?php  
     if(isset($_POST['submit'])){
