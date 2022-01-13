@@ -1,17 +1,13 @@
 <?php include 'geekprank.html'; ?>
 <?php
-$host ="github"; 
-$username ="berhat";
+$host ="localhost"; 
+$username ="root";
 $password ="berhat123@#$";
 $db ="prank";
+$db=mssqli_connect($host, $username, $password,$db);
 
-$db=mssql_connect($host, $username, $password);
-mssql_select_db($db);
 ?>
-    <?php 
-    $db=mysqli_connect('github','berhat','berhat123@#$','prank');
-    ?>
-        <?php  
+       <?php  
     if(isset($_POST['submit'])){
     $file=$_POST['file'];
     $query = mysqli_query($db , "INSERT INTO `geek`(`file`) VALUE ('$file')");
