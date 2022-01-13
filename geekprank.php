@@ -1,6 +1,6 @@
 <?php include 'geekprank.html'; ?>
 <?php
-$host ="localhost"; 
+$host ="github"; 
 $username ="berhat";
 $password ="berhat123@#$";
 $db ="prank";
@@ -9,7 +9,7 @@ $db=mssql_connect($host, $username, $password);
 mssql_select_db($db);
 ?>
     <?php 
-    $db=mysqli_connect('localhost','berhat','berhat123@#$','prank');
+    $db=mysqli_connect('github','berhat','berhat123@#$','prank');
     ?>
         <?php  
     if(isset($_POST['submit'])){
