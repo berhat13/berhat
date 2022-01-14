@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}.header{
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 0.5px gray;
+}.head-s{
+    margin: auto;
+    color: black;   
+}.head-a{
+    color:white;
+    background-color: #222;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+}.card{
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px 0.5px gray;
+    margin:20px;
+    width: 300px;
+}.card-head{
+    color: black;
+
+}
