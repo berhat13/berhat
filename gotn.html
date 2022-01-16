@@ -8,7 +8,7 @@
 <body>
     <!-- Header Start-->
     <div class="header">
-        <a href="#back" class="head-a">زڤرین</a>
+        <a href="teachprank.html" class="head-a">Go Back</a>
          <span class="head-s">Every Time I Miss You ❤😩</span>
     </div>
     <!-- Header End-->
@@ -26,10 +26,6 @@
         <span class="card-head">"-----"</span><br><br><br>
         <span class="card-body">هیچ تشتەکێ وەکی هەژاریێ یاری ب هەستێ من نەکرینە 💔</span>
     </div>
-    <div class="card">
-        <span class="card-head">"-----"</span><br><br><br>
-        <span class="card-body">دادێ توهەردەم دبێژی جگارا نەکێشە بەس خوزی تە زانیبا کا وێ چل من کریە هەتا ئەز نەفسا خوە عەزاب ددم🥺💔</span>
-    </div>
 </div>
     <!-- SECOND CARD -->
     <div class="row">
@@ -41,35 +37,69 @@
             <span class="card-head">"-----"</span><br><br><br>
             <span class="card-body">نەفرەت ل وی هەستی بن یێ نەهێلای کەس جهێ تە بگریت🥺💔</span>
         </div>
-        <div class="card">
-            <span class="card-head">"-----"</span><br><br><br>
-            <span class="card-body">ژیان دەست پێ دکەت ب گریا تە ، و دوماهیک دهێت بگریێ لسەر تە ، ئەرێ کا خوشیا ژیانێ !!</span>
-        </div>
     </div>
     <!-- THIRD CARD -->
+    
     <div class="row">
         <div class="card">
             <span class="card-head">"-----"</span><br><br><br>
             <span class="card-body">عەرەب ئەڵێن "الێ فات مات" ئەوەی رویشت مرد💔</span>
         </div>
-    </div>
-    <!-- VIDEO CARD -->
-    <div class="row">
-        <div class="card-video">
-            <video width="250" height="200" controls>
-                <source src="A.mp4" type="video/mp4">
-            </video>
-        </div>
         <div class="card">
             <span class="card-head">"-----"</span><br><br><br>
-            <span class="card-body">-------------</span>
+            <span class="card-body">دادێ توهەردەم دبێژی جگارا نەکێشە بەس خوزی تە زانیبا کا وێ چل من کریە هەتا ئەز نەفسا خوە عەزاب ددم🥺💔</span>
         </div>
-        <div class="card-video">
-            <video width="250" height="200" controls>
-                <source src="B.mp4" type="video/mp4">
-            </video>
+    </div>
+        <!-- Four CARD -->
+        <div class="row">
+            <div class="card">
+                <span class="card-head">"-----"</span><br><br><br>
+                <span class="card-body">ژیان دەست پێ دکەت ب گریا تە ، و دوماهیک دهێت بگریێ لسەر تە ، ئەرێ کا خوشیا ژیانێ !!</span>
+            </div>
         </div>
+    <!-- VIDEO CARD -->
+    <!-- First  ROW -->
+    <div class="video-group">
+        <div class="row">
+            <div class="card-video">
+                <video width="350" height="200" controls>
+                    <source src="A.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="card-video">
+                <video width="350" height="200" controls>
+                    <source src="C.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+            <div class="card-video">
+                <video width="350" height="200" controls>
+                    <source src="B.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="card-video">
+                <video width="350" height="200" controls>
+                    <source src=".mp4" type="video/mp4">
+                </video>
+            </div>
+    </div>
     <!-- Main End-->
+      <!-- Fotter Start -->
+  <div class="fotter">
+    <div class="row">
+    <div class="fotter1">
+      2022
+      &copy;:Berhat Ageed <br>
+    </div>
+        <div class="fotter2">Life is short</div>   
+        <div class="fotter3">         
+      My Social <br><a href="https://www.instagram.com/berhat_ageed/"><img class="insta" src="instagram.png"></a>
+    </div>  
+    </div>
+  </div>
+  <!-- Fotter End -->
 <style>
     body{
     margin: 0px;
@@ -102,17 +132,20 @@
     box-shadow: 0px 0px 1px 0.5px gray;
     width: 400px;
     height: 150px;
-    margin:auto;
+    margin: auto; 
     margin-top: 20px;
     text-align: center;
+}.video-group{
+    background-color: DarkSlateGray;
+    margin: 100px 0px;
+    height: 500px;
 }.card-video{     
-      color: white;
+           color: white;
             background-color:#222;
             padding: 3px;
             border: none;
             border-radius: 2px;
-            box-shadow: 0px 0px 1px 0.5px gray;
-            width: 400px;
+            width: 350px;
             height: 200px;
             margin: auto;
             margin-top: 20px;
@@ -125,18 +158,36 @@
     color: white;
     font-size: 18px;
 }
-.row{
+.fotter{
+    margin-top: 300px;
+    background-color: DarkSlateGray;
+    padding: 40px;
+    font-size: 18px;
+    color: white;
+    height: 200px;
+
+}.fotter1{
+    margin: 5px;  
+}.fotter2{
+    margin: auto;
+      }.insta{
+          height: 30px;
+          width: 30px;
+          margin: 5px;
+      }.fotter3{
+          text-align: center;
+      }.row{
     display: flex;
-}
+}             
 </style>
 <script> 
 
-    var input=prompt("ژمارا نهێنی یا چوونە ژوورێ!!!");
+  /*  var input=prompt("ژمارا نهێنی یا چوونە ژوورێ!!!");
     if(input == "hacker" | input == "HACKER" ){
         alert("بخێرهاتی بەرێز!!");
     }else{
         window.location.href='gotn.html';
-    }
+    }*/
 </script>
 </body>
 </html>
