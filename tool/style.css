@@ -1,26 +1,21 @@
 /* navigation style */
-.navbar {
-    font-family: roman;
-    box-shadow: 0px 0px 1px 1px lightgray;
-    transition: 0.8s;
-}
-.nav-link {
-    margin-left: 20px;
-    font-size: large;
-    transition: 0.8s;
+.navbar{
+    box-shadow: 0px 0px 1px 1px white; 
+    height: 60px;
+}.ul{ 
+    display: flex;
+    list-style-type: none;
+}.ul li{
+    padding: 5px 10px;
+}.li .nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
     color: white;
+    transition: 0.6s;
+}.li .nav:hover{
+    font-size: 21px;
 }
-
-.nav-links {
-    padding: 0px;/* for fun*/
-}
-
-.nav-link:hover {
-    box-shadow: 0px 0px 3px 1px white;
-    border-radius: 3px;
-    padding-left: 5px;
-}
-
 .border-readius {
     border-radius: 5px;
 }.about{
