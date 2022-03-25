@@ -12,8 +12,8 @@
 
 <body class="body">
   <!-- Header Start-->
-    <!-- Navigation bar  start -->
-  <div class="navbar"style="background-color:#222;">
+  <!-- Navigation bar  start -->
+  <div class="navbar" style="background-color:#222;">
     <ul class="ul">
       <li class="li"><a href="index.html" class="nav">Home</a></li>
       <li class="li"><a href="Web.html" class="nav">Web</a></li>
@@ -21,7 +21,7 @@
     </ul>
   </div>
   <!-- Navigation bar End -->
-  <!-- Header Ebd -->
+  <!-- Header End -->
   <!-- Main Start-->
   <div class="about container">
     <img src="img/a.jpg" height="350px" width="350px" class="rounded-circle"> <br>
@@ -32,56 +32,25 @@
       I am Learning : Kali Linux ' OS '☠️
       <br>
   </div>
-  <!-- Geek Prank -->
-  <a href="techprank.html" class="prank">Go TechPrank</a>
-    <!-- Main Start-->
-    <div class="buttongroup">
-      <p class="pgroup">Click button to change background-color :- </p>
-      <button type="button" class="btn btn-outline-success">Success</button>
-      <button type="button" class="btn btn-outline-danger">Danger</button>
-      <button type="button" class="btn btn-outline-warning">Warning</button>
-      <button type="button" class="btn btn-outline-info">Info</button>
-      <button type="button" class="btn btn-outline-dark">Dark</button>
-      <button type="button" class="btn btn-outline-light">Light</button>
-    </div><br>
-    <div class="lorem">
-      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Tempore excepturi nesciunt illum libero distinctio ipsa
-        labore veritatis! Accusantium quam animi, praesentium dolores
-        tempore neque optio ipsum, eveniet assumenda ea dignissimos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Explicabo labore quasi dolorem ullam eius quos nisi
-        perferendis debitis voluptate velit optio unde rem repellendus,
-        impedit, cupiditate, ut atque facere sunt!
-        tempore neque optio ipsum, eveniet assumenda ea dignissimos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Explicabo labore quasi dolorem ullam eius quos nisi
-        perferendis debitis voluptate velit optio unde rem repellendus,
-        impedit, cupiditate, ut atque facere sunt!</p><br>
-      <button type="button" class="btn btn-outline-primary w-100">Toggle Slide</button><br><br>
-      <button type="button" class="btn danger btn-outline-danger w-100">Danger</button>
-    </div>
-    <!-- Main End-->
+
+
   <!-- Main End-->
   <!-- Fotter Start -->
-  <div class="fotter col-sm-12">
-    <div class="row">
-    <div class="fotter1 col-sm-5">
-      2022
-      &copy;:Berhat Ageed <br>
-      School Does Not Teach Life
-    </div>
-        <div class="fotter2 m-auto col-sm-5">
-        ❤️ گوتن : ژبەر کو گەلەک حەژ تە دکم نەبە ئازارەک
-        روژەکێ بو بیانیەکێ بەحسێ تە بکم
-        </div>
-       <div class="fotter3 col-sm-2">
-      My Social <a href="https://www.instagram.com/berhat_ageed/"><img class="insta" src="img/instagram.png"></a>
-      </div>
-    </div>
+  <div class="fotter mt-3 p-5">
+
+    <!-- Planet_Of_World -->
+    <a href="gotn.html" class="word text-center text-white p-3">Planet_Of_World</a>
+
+    <span class="fotter3 ">
+      <a href="https://www.instagram.com/berhat_ageed/">
+        <img class="insta" height="40px" src="instagram.png"></a>
+    </span>
+
   </div>
   <!-- Fotter End -->
+
 </body>
+
 </html>
 <!-- some style -->
 <style>
@@ -95,10 +64,12 @@
     border-radius: 3px;
     text-align: center;
   }
+
   .pgroup {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
   }
+
   .lorem {
     background-color: white;
     padding: 7px;
@@ -107,49 +78,42 @@
     width: 600px;
     margin: auto;
     margin-bottom: 20px;
-  }.fotter{
-    margin-top: 300px;
-    background-color:#222;
-    height: 300px;
+  }
+
+  .word {
+    background-color: rgb(10, 119, 119);
+    border-radius: 3px;
+    transition: 0.6s;
+    text-decoration: none;
+    font-family: Roman;
+    margin: auto;
+  }
+
+  .word:hover {
+    background-color: rgb(11, 87, 87);
+    text-decoration: none;
+    color: white;
+  }
+
+  /* fotter style*/
+  .fotter {
+    background-color: DarkSlateGray;
+    font-size: 18px;
+    color: white;
+    height: 200px;
+  }
+
+  /* fotters 3 */
+  .fotter3 {
+    position: absolute;
+    right: 20px;
   }
 </style>
 <!-- some style -->
 <!-- Jquery is Start-->
 <script>
-  $(".btn-outline-success").on("click", function () {
-    $(".body").toggleClass("bg-success");
-  })
-  $(".btn-outline-danger").on("click", function () {
-    $(".body").toggleClass("bg-danger");
-  })
-  $(".btn-outline-warning").on("click", function () {
-    $(".body").toggleClass("bg-warning");
-  })
-  $(".btn-outline-info").on("click", function () {
-    $(".body").toggleClass("bg-info");
-  })
-  $(".btn-outline-light").on("click", function () {
-    $(".body").toggleClass("bg-light");
-  })
-  $(".btn-outline-dark").on("click", function () {
-    $(".body").toggleClass("bg-dark");
-  })
-  $(".btn-outline-primary").on("click", function () {
-    $(".p").slideToggle();
-  })
-  $(".btn-outline-primary").on("mouseover", function () {
-    $(".danger").show();
-  })
-  $(".danger").on("mouseover", function () {
-    $(".danger").hide();
-  })
   $(window).on("resize", function () {
     alert('You Do Resize')
   })
 </script>
-    <script>
-    document.addEventListener("contextmenu",function off(e)
-    {e.preventDefault();
-    });
-    </script>
 <!-- Jquery is End-->
